@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>編輯個人資料</title>
+</head>
+<body>
+    <h1>編輯個人資料</h1>
+    <form method="post">
+        <label for="name">姓名:</label>
+        <input type="text" name="name" value="{{ user['nm'] }}" required>
+        <br>
+        <label for="birthdate">生日:</label>
+        <input type="date" name="birthdate" value="{{ user['birth'] }}">
+        <br>
+        <label for="bloodtype">血型:</label>
+        <input type="text" name="bloodtype" value="{{ user['blood'] }}">
+        <br>
+        <label for="phone">手機:</label>
+        <input type="text" name="phone" value="{{ user['phone'] }}">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="{{ user['email'] }}">
+        <br>
+        <label for="identity_card">身份證號:</label>
+        <input type="text" name="identity_card" value="{{ user['idno'] }}">
+        <br>
+        <label for="password">密碼:</label>
+        <input type="text" name="password" value="{{ user['pwd'] }}" required>
+        <br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
